@@ -22,4 +22,22 @@ export default function Wonders() {
              Location: "Yucatan",
               country: "Mexico",
                Image:"https://lizytravelstheworld.com/wp-content/uploads/2020/06/chichen-itza-el-castillo-pyramid-1024x675.jpg"},
+           return (
+                <div>
+               <div className="row row-cols-1 row-cols-md-2 g-4">
+                 {empData.map((place) => (
+                   <div className="col" key={place.name}>
+                     <div className="card">
+                       <img src={place.image} className="card-img-top" alt={place.name} />
+                       <div className="card-body">
+                         <h5 className="card-title">{place.name}</h5>
+                         <p className="card-text">{place.year}, {place.cost}</p>
+                       </div>
+                     </div>
+                   </div>
+                 ))}
+               </div>
+             </div>
+            );
+            }
         
