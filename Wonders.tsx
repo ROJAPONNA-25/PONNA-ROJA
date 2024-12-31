@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 
 export default function Wonders() {
         const empData = [
@@ -22,16 +22,16 @@ export default function Wonders() {
              Location: "Yucatan",
               country: "Mexico",
                Image:"https://lizytravelstheworld.com/wp-content/uploads/2020/06/chichen-itza-el-castillo-pyramid-1024x675.jpg"},
-           return (
+               return (
                 <div>
                <div className="row row-cols-1 row-cols-md-2 g-4">
                  {empData.map((place) => (
-                   <div className="col" key={place.name}>
+                   <div className="col" key={place.Wonders}>
                      <div className="card">
-                       <img src={place.image} className="card-img-top" alt={place.name} />
+                       <img src={place.Image} className="card-img-top" alt={place.Wonders} />
                        <div className="card-body">
-                         <h5 className="card-title">{place.name}</h5>
-                         <p className="card-text">{place.year}, {place.cost}</p>
+                         <h5 className="card-title">{place.Wonders}</h5>
+                         <p className="card-text">{place.Country}, {place.Location}</p>
                        </div>
                      </div>
                    </div>
@@ -40,4 +40,3 @@ export default function Wonders() {
              </div>
             );
             }
-        
